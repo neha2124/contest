@@ -7,6 +7,7 @@ fetch('https://dummyjson.com/products')
 .then(res => res.json())
 // .then(data => console.log(data))
 .then(data => showData(data.products))
+.catch((error) => alert(error))
             
 }  
 data()
